@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/calc_view"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal|right"
+                android:text=""/>
+            <TextView
+                android:id="@+id/calc_result"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal|right"
+                android:text=""/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TableLayout
+                android:id="@+id/calc_table"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="*">
+                <TableRow>
+                    <Button android:layout_width="wrap_content" android:id="@+id/clear_calc" android:layout_height="wrap_content" android:text="AC"/>
+                    <Button android:layout_width="wrap_content" android:id="@+id/calc_b_divide" android:layout_height="wrap_content" android:text="/"/>
+                    <Button android:layout_width="wrap_content" android:id="@+id/calc_b_multiply" android:layout_height="wrap_content" android:text="*"/>
+                    <Button android:layout_width="wrap_content" android:id="@+id/calc_b_subtract" android:layout_height="wrap_content" android:text="-"/>
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_span="3"
+                        android:stretchColumns="*">
+                        <TableRow>
+                            <Button android:layout_width="wrap_content" android:id="@+id/calc_n_7" android:layout_height="wrap_content" android:text="7"/>
+                            <Button android:layout_width="wrap_content" android:id="@+id/calc_n_8" android:layout_height="wrap_content" android:text="8"/>
+                            <Button android:layout_width="wrap_content" android:id="@+id/calc_n_9" android:layout_height="wrap_content" android:text="9"/>
+                        </TableRow>
+                        <TableRow>
+                            <Button android:layout_width="wrap_content" android:id="@+id/calc_n_4" android:layout_height="wrap_content" android:text="4"/>
+                            <Button android:layout_width="wrap_content" android:id="@+id/calc_n_5" android:layout_height="wrap_content" android:text="5"/>
+                            <Button android:layout_width="wrap_content" android:id="@+id/calc_n_6" android:layout_height="wrap_content" android:text="6"/>
+                        </TableRow>
+                    </TableLayout>
+                    <Button android:layout_width="wrap_content" android:id="@+id/calc_b_add" android:layout_height="match_parent" android:text="+"/>
+                </TableRow>
+                <TableRow>
+                    <TableLayout
+                        android:layout_span="3"
+                        android:stretchColumns="*">
+                        <TableRow>
+                            <Button android:layout_width="wrap_content" android:id="@+id/calc_n_1" android:layout_height="wrap_content" android:text="1"/>
+                            <Button android:layout_width="wrap_content" android:id="@+id/calc_n_2" android:layout_height="wrap_content" android:text="2"/>
+                            <Button android:layout_width="wrap_content" android:id="@+id/calc_n_3" android:layout_height="wrap_content" android:text="3"/>
+                        </TableRow>
+                        <TableRow>
+                            <Button android:layout_width="wrap_content" android:id="@+id/calc_n_0" android:layout_height="wrap_content" android:text="0" android:layout_span="2"/>
+                            <Button android:layout_width="wrap_content" android:id="@+id/calc_n_dot" android:layout_height="wrap_content" android:text="."/>
+                        </TableRow>
+                    </TableLayout>
+                    <Button android:layout_width="wrap_content" android:id="@+id/calc_b_eq" android:layout_height="match_parent" android:text="="/>
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="goMain"
+            android:text="返回主界面">
+
+        </Button>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
