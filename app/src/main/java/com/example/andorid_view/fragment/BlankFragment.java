@@ -1,4 +1,7 @@
 package com.example.andorid_view.fragment;
+/**
+ * 空白fragment
+ */
 
 import android.os.Bundle;
 

@@ -1,4 +1,7 @@
 package com.example.andorid_view.fragment;
+/**
+ * 复选框
+ */
 
 import android.os.Bundle;
 

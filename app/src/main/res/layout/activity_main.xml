@@ -66,6 +66,18 @@
                     android:layout_height="60dp"
                     android:text="文件搜索">
                 </Button>
+                <Button
+                    android:id="@+id/simpleAdapter"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="simpleAdapter">
+                </Button>
+                <Button
+                    android:id="@+id/chuti_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="抽屉样式">
+                </Button>
             </LinearLayout>
 
         </ScrollView>

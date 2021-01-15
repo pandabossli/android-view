@@ -1,4 +1,7 @@
 package com.example.andorid_view.fragment;
+/**
+ * 自动提示输入框
+ */
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

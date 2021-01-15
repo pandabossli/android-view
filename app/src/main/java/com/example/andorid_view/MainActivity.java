@@ -27,7 +27,7 @@ import com.example.andorid_view.fragment.RadioGroupFragment;
 import com.example.andorid_view.fragment.XiangbuFragment;
 
 public class MainActivity extends AppCompatActivity {
-    Button calcActivity,blank_btn,autoinput_btn,radio_btn,checkbox_btn,notify,xiangbu,filesearch;
+    Button calcActivity,blank_btn,autoinput_btn,radio_btn,checkbox_btn,notify,xiangbu,filesearch,simpleAdapter,chuti_view;
     LinearLayout fragment_container;
     private FragmentManager manager;
     private FragmentTransaction transaction;
@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         notify = findViewById(R.id.notify);
         xiangbu = findViewById(R.id.xiangbu);
         filesearch = findViewById(R.id.filesearch);
+        simpleAdapter = findViewById(R.id.simpleAdapter);
+        chuti_view = findViewById(R.id.chuti_view);
 
 
         fragment_container = findViewById(R.id.fragment_container);
@@ -63,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         notify.setOnClickListener(new MainClickListenter());
         xiangbu.setOnClickListener(new MainClickListenter());
         filesearch.setOnClickListener(new MainClickListenter());
+        simpleAdapter.setOnClickListener(new MainClickListenter());
+        chuti_view.setOnClickListener(new MainClickListenter());
     }
 
     class MainClickListenter implements View.OnClickListener{
@@ -154,6 +158,12 @@ public class MainActivity extends AppCompatActivity {
                     lastF = fileSearchFragment;
                     transaction.replace(R.id.fragment_container, fileSearchFragment);
                     transaction.commit();
+                    break;
+                case R.id.simpleAdapter:
+                    SimpleAdapterActivity.start(MainActivity.this);
+                    break;
+                case R.id.chuti_view:
+                    SimpleAdapterActivity.start(MainActivity.this);
                     break;
             }
         }

@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Andoridview">
-        <activity android:name=".CalculatorActivity"></activity>
+        <activity
+            android:name=".ChoutiActivity"
+            android:label="@string/title_activity_chouti"
+            android:theme="@style/Theme.Andoridview.NoActionBar"></activity>
+        <activity android:name=".SimpleAdapterActivity" />
+        <activity android:name=".CalculatorActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
